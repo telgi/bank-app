@@ -52,7 +52,7 @@ I want to be able to print a statement as receipt.
 ### Calculator
 ##### *Responsible for working out changes to balance*
 * Add is responsible for adding amount to balance [x]
-* Subtract is responsible for subtracting amount from balance
+* Subtract is responsible for subtracting amount from balance [x]
 
 ### Printer
 ##### *Responsible for displaying account information*

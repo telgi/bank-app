@@ -9,17 +9,23 @@ class Account
     @balance = 0
   end
 
-  def balance
-    @balance
-  end
-
   def deposit(amount)
     add(balance, amount)
   end
 
   def withdraw(amount)
-    raise "Balance too low" if amount > balance
-    @balance -= amount
+    withdrawal_checks(amount)
+    subtract(balance, amount)
+  end
+
+  private
+
+  def withdrawal_checks(amount)
+    raise "Balance too low" if overdrawn?(amount)
+  end
+
+  def overdrawn?(amount)
+    amount > balance
   end
 
 end
