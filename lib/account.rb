@@ -1,13 +1,17 @@
 class Account
 
-  attr_reader :balance
+  attr_accessor :balance
 
   def initialize
-    @balance = balance
+    @balance = 0
   end
 
   def balance
-    @balance = 0
+    @balance
+  end
+
+  def deposit(amount)
+    @balance += amount
   end
 
 end

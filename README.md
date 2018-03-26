@@ -42,15 +42,17 @@ I want to be able to print a statement as receipt.
 
 ### Account
 ##### *Responsible for managing account*
-* Balance starts at zero [x]
+* Has a balance that starts at zero [x]
+* Allows user to deposit amount [x]
+* Allows user to withdraw amount []
 * Balance is responsible for knowing current funds
 * Balance is responsible for updating current funds
 * Balance is responsible for time-stamping transactions
 
 ### Calculator
 ##### *Responsible for working out changes to balance*
-* Deposit is responsible for adding money from balance
-* Withdraw is responsible for subtracting money from balance
+* Add is responsible for adding amount to balance
+* Subtract is responsible for subtracting amount from balance
 
 ### Printer
 ##### *Responsible for displaying account information*

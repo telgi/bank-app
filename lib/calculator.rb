@@ -1,6 +1,6 @@
 class Calculator
 
-  def deposit
+  def add
 
   end
 
