@@ -4,9 +4,13 @@ describe Account do
 
   let(:account) { described_class.new }
 
-  describe '#balance' do
-    it 'starts by returning a balance of zero' do
+  describe '#initialization' do
+    it 'has a starting balance of zero' do
       expect(account.balance).to eq(0)
+    end
+
+    it 'stores transactions in an array' do
+      expect(account.transactions).to eq []
     end
   end
 
@@ -14,6 +18,11 @@ describe Account do
     it 'deposits amount to account balance' do
       account.deposit(100)
       expect(account.balance).to eq(100)
+    end
+
+    it 'stores transaction into transactions array' do
+      account.deposit(100)
+      expect(account.transactions).to include("26/03/2018 || 100.00 || || 100.00")
     end
   end
 
