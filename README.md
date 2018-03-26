@@ -44,7 +44,7 @@ I want to be able to print a statement as receipt.
 ##### *Responsible for managing account*
 * Has a balance that starts at zero [x]
 * Allows user to deposit amount [x]
-* Allows user to withdraw amount []
+* Allows user to withdraw amount [x]
 * Balance is responsible for knowing current funds
 * Balance is responsible for updating current funds
 * Balance is responsible for time-stamping transactions
