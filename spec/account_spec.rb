@@ -2,7 +2,7 @@ require 'account'
 
 describe Account do
 
-  let(:account) { described_class.new }
+  let(:account)   { described_class.new }
 
   describe '#initialization' do
     it 'has a starting balance of zero' do
@@ -20,9 +20,10 @@ describe Account do
       expect(account.balance).to eq(100)
     end
 
-    it 'stores transaction into transactions array' do
+    it 'stores deposit transaction into transactions array' do
+      date = DateTime.now.strftime('%d/%m/%Y')
       account.deposit(100)
-      expect(account.transactions).to include("26/03/2018 || 100.00 || || 100.00")
+      expect(account.transactions).to include("#{date} || Deposit || 100.00 || 100.00")
     end
   end
 
@@ -31,6 +32,13 @@ describe Account do
       account.deposit(100)
       account.withdraw(50)
       expect(account.balance).to eq(50)
+    end
+
+    it 'stores withdrawal transaction into transactions array' do
+      date = DateTime.now.strftime('%d/%m/%Y')
+      account.deposit(100)
+      account.withdraw(50)
+      expect(account.transactions).to include("#{date} || Withdrawal || 50.00 || 50.00")
     end
 
     it 'raises error if balance would be below zero' do

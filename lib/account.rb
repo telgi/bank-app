@@ -21,6 +21,7 @@ class Account
   def withdraw(amount)
     withdrawal_checks(amount)
     subtract(balance, amount)
+    @transactions << @printer.withdrawal_log(balance, amount)
   end
 
   private
