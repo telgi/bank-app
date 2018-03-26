@@ -41,18 +41,17 @@ I want to be able to print a statement as receipt.
 ## Features
 
 ### Account
-##### *Responsible for managing account*
+##### *Responsible for managing user account*
 * Has a balance that starts at zero [x]
+* has a balance that updates and returns current amount [x]
 * Allows user to deposit amount [x]
 * Allows user to withdraw amount [x]
 * User cannot withdraw amount that takes balance below zero [x]
-* Balance is responsible for knowing current funds
-* Balance is responsible for updating current funds
 * Balance is responsible for time-stamping transactions
 
 ### Calculator
 ##### *Responsible for working out changes to balance*
-* Add is responsible for adding amount to balance
+* Add is responsible for adding amount to balance [x]
 * Subtract is responsible for subtracting amount from balance
 
 ### Printer

@@ -1,7 +1,9 @@
-class Calculator
+module Calculator
 
-  def add
+  private
 
+  def add(balance, amount)
+    @balance += amount
   end
 
 end

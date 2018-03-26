@@ -1,4 +1,7 @@
+require_relative 'calculator'
+
 class Account
+  include Calculator
 
   attr_accessor :balance
 
@@ -11,7 +14,7 @@ class Account
   end
 
   def deposit(amount)
-    @balance += amount
+    add(balance, amount)
   end
 
   def withdraw(amount)
