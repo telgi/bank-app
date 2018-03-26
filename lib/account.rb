@@ -1,4 +1,5 @@
 require_relative 'calculator'
+require_relative 'printer'
 require 'date'
 
 class Account
@@ -9,14 +10,12 @@ class Account
   def initialize
     @balance = 0
     @transactions = []
+    @printer = Printer.new
   end
 
   def deposit(amount)
     add(balance, amount)
-    date = DateTime.now.strftime('%d/%m/%Y')
-    values = sprintf('%.2f', amount) + " || || " + sprintf('%.2f', balance)
-    transaction = "#{date} || #{values}"
-    transactions << transaction
+    @transactions << @printer.deposit_log(balance, amount)
   end
 
   def withdraw(amount)
