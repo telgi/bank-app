@@ -29,4 +29,13 @@ describe Account do
     end
   end
 
+  describe '#display_statement' do
+    it 'displays a statement of all transactions made' do
+      date = DateTime.now.strftime('%d/%m/%Y')
+      account.deposit(100)
+      msg = "Date       || Trans   || Balance\n#{date} || +100.00 || 100.00\n"
+      expect { account.display_statement }.to output(msg).to_stdout
+    end
+  end
+
 end

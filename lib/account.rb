@@ -23,6 +23,10 @@ class Account
     @activity.withdrawal_log(amount, balance)
   end
 
+  def display_statement
+    @activity.process_statement
+  end
+
   private
 
   def withdrawal_checks(amount)

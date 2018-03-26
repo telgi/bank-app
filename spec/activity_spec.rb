@@ -4,12 +4,6 @@ describe Activity do
 
   let(:activity) { described_class.new }
 
-  describe '#initialization' do
-    it 'stores transactions in an array' do
-      expect(activity.transactions).to eq []
-    end
-  end
-
   describe '#deposit_log' do
     it 'logs every deposit' do
       date = DateTime.now.strftime('%d/%m/%Y')

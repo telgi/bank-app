@@ -1,9 +1,12 @@
+require_relative 'printer'
+
 class Activity
 
   attr_reader :transactions
 
   def initialize
     @transactions = []
+    @printer = Printer.new
   end
 
   def deposit_log(amount, balance)
@@ -12,6 +15,10 @@ class Activity
 
   def withdrawal_log(amount, balance)
     @transactions << withdrawal_transaction(amount, balance)
+  end
+
+  def process_statement
+    @printer.statement(transactions)
   end
 
   private

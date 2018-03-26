@@ -43,10 +43,11 @@ I want to be able to print a statement as receipt.
 ### Account
 ##### *Responsible for managing user account*
 * Has a balance that starts at zero [x]
-* has a balance that updates and returns current amount [x]
+* Has a balance that updates and returns current amount [x]
 * Allows user to deposit amount [x]
 * Allows user to withdraw amount [x]
 * User cannot withdraw amount that takes balance below zero [x]
+* Allows user to display statement [x]
 
 ### Calculator
 ##### *Responsible for working out changes to balance*
@@ -55,14 +56,20 @@ I want to be able to print a statement as receipt.
 
 ### Activity
 ##### *Responsible for logging transactions*
-* logs every deposit with a date-stamp []
-* logs every withdrawal with a date-stamp []
+* logs every deposit with a date-stamp [x]
+* logs every withdrawal with a date-stamp [x]
 
 ### Printer
 ##### *Responsible for displaying account information*
 * Has a statement header [x]
-* prints a statement of every transaction []
+* prints a statement of every transaction [x]
 
 ## Screenshot
+
+![Alt text](assets/images/example_screenshot.png?raw=true "Example Screenshot in irb")
+
+#### Author
+
+Terry Allitt
 
 ![Alt text](assets/images/placeholder.png?raw=true "Ruby placeholder until screenshot appears")

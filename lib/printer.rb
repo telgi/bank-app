@@ -1,12 +1,20 @@
 class Printer
 
+  def statement(transactions)
+    statement_header
+    statement_body(transactions)
+  end
+
+  private
+
   def statement_header
     puts "Date       || Trans   || Balance"
   end
 
-  def statement
-    statement_header
-    puts "26/03/2018 || +100.00 || 100.00"
+  def statement_body(transactions)
+    transactions.reverse.each do |trans|
+      puts "#{trans}"
+    end
   end
 
 end
