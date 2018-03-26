@@ -47,16 +47,21 @@ I want to be able to print a statement as receipt.
 * Allows user to deposit amount [x]
 * Allows user to withdraw amount [x]
 * User cannot withdraw amount that takes balance below zero [x]
-* Balance is responsible for time-stamping transactions
 
 ### Calculator
 ##### *Responsible for working out changes to balance*
-* Add is responsible for adding amount to balance [x]
-* Subtract is responsible for subtracting amount from balance [x]
+* Adds amount to balance [x]
+* Subtracts amount from balance [x]
+
+### Activity
+##### *Responsible for logging transactions*
+* logs every deposit with a date-stamp []
+* logs every withdrawal with a date-stamp []
 
 ### Printer
 ##### *Responsible for displaying account information*
-* Statement is responsible for printing receipt of account transaction
+* Has a statement header [x]
+* prints a statement of every transaction []
 
 ## Screenshot
 

@@ -23,7 +23,7 @@ describe Account do
     it 'stores deposit transaction into transactions array' do
       date = DateTime.now.strftime('%d/%m/%Y')
       account.deposit(100)
-      expect(account.transactions).to include("#{date} || Deposit || 100.00 || 100.00")
+      expect(account.transactions).to include("#{date} || +100.00 || 100.00")
     end
   end
 
@@ -38,7 +38,7 @@ describe Account do
       date = DateTime.now.strftime('%d/%m/%Y')
       account.deposit(100)
       account.withdraw(50)
-      expect(account.transactions).to include("#{date} || Withdrawal || 50.00 || 50.00")
+      expect(account.transactions).to include("#{date} || -50.00 || 50.00")
     end
 
     it 'raises error if balance would be below zero' do
