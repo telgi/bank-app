@@ -44,6 +44,7 @@ I want to be able to print a statement as receipt.
 ##### *Responsible for managing account*
 * Balance is responsible for knowing current funds
 * Balance is responsible for updating current funds
+* Balance is responsible for time-stamping transactions
 
 ### Calculator
 ##### *Responsible for working out changes to balance*
