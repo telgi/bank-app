@@ -1,27 +1,26 @@
 require_relative 'calculator'
-require_relative 'printer'
+require_relative 'activity'
 require 'date'
 
 class Account
   include Calculator
 
-  attr_accessor :balance, :transactions
+  attr_accessor :balance
 
   def initialize
     @balance = 0
-    @transactions = []
-    @printer = Printer.new
+    @activity = Activity.new
   end
 
   def deposit(amount)
     add(balance, amount)
-    @transactions << @printer.deposit_log(balance, amount)
+    @activity.deposit_log(amount, balance)
   end
 
   def withdraw(amount)
     withdrawal_checks(amount)
     subtract(balance, amount)
-    @transactions << @printer.withdrawal_log(balance, amount)
+    @activity.withdrawal_log(amount, balance)
   end
 
   private
