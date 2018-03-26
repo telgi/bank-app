@@ -42,6 +42,7 @@ I want to be able to print a statement as receipt.
 
 ### Account
 ##### *Responsible for managing account*
+* Balance starts at zero [x]
 * Balance is responsible for knowing current funds
 * Balance is responsible for updating current funds
 * Balance is responsible for time-stamping transactions
