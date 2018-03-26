@@ -23,6 +23,10 @@ describe Account do
       account.withdraw(50)
       expect(account.balance).to eq(50)
     end
+
+    it 'raises error if balance would be below zero' do
+      expect { account.withdraw(10) }.to raise_error "Balance too low"
+    end
   end
 
 end

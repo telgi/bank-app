@@ -15,6 +15,7 @@ class Account
   end
 
   def withdraw(amount)
+    raise "Balance too low" if amount > balance
     @balance -= amount
   end
 
