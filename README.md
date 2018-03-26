@@ -60,8 +60,7 @@ I want to be able to print a statement as receipt.
 * logs every withdrawal with a date-stamp [x]
 
 ### Printer
-##### *Responsible for displaying account information*
-* Has a statement header [x]
+##### *Responsible for printing account information*
 * prints a statement of every transaction [x]
 
 ## Screenshot
