@@ -1,3 +1,6 @@
-source "https://rubygems.org" do
-  gem 'simplecov', require: false, group: :test
+source "https://rubygems.org"
+
+group :test do
+  gem 'simplecov'
+  gem 'timecop'
 end

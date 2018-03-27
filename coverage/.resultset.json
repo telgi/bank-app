@@ -3,6 +3,7 @@
     "coverage": {
       "/Users/terenceallitt/Projects/tech-test-week/bank-app/spec/account_spec.rb": [
         1,
+        1,
         null,
         1,
         null,
@@ -33,6 +34,7 @@
         null,
         null,
         null,
+        1,
         1,
         1,
         1,
@@ -165,12 +167,17 @@
       ],
       "/Users/terenceallitt/Projects/tech-test-week/bank-app/spec/activity_spec.rb": [
         1,
+        1,
         null,
         1,
         null,
         3,
         null,
         1,
+        2,
+        2,
+        null,
+        null,
         1,
         1,
         1,
@@ -189,6 +196,6 @@
         null
       ]
     },
-    "timestamp": 1522140733
+    "timestamp": 1522105200
   }
 }

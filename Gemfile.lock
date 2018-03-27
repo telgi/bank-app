@@ -8,12 +8,14 @@ GEM
       json (>= 1.8, < 3)
       simplecov-html (~> 0.10.0)
     simplecov-html (0.10.2)
+    timecop (0.9.1)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  simplecov!
+  simplecov
+  timecop
 
 BUNDLED WITH
    1.16.1
