@@ -32,8 +32,6 @@ Test features by instantiating `Account` in `irb`
 
 Test units by running `rspec`
 
-`open coverage/index.html` to check test coverage
-
 Run `rubocop` to check styling offences
 
 ## User Stories
