@@ -4,19 +4,19 @@ Practice tech test to build a simple bank application using OOP in Ruby.
 
 ## Installation
 
-In terminal:
-
 `git clone git@github.com:telgi/bank-app.git`
 
-## How to Run
+`bundle install`
 
-In terminal:
+## How to Run
 
 Use `irb` to interact with program
 
 ## Running Tests
 
-`rspec`
+Feature tested using `irb`
+
+Unit tested using `rspec`
 
 ## User Stories
 
@@ -63,9 +63,13 @@ I want to be able to print a statement as receipt.
 ##### *Responsible for printing account information*
 * prints a statement of every transaction [x]
 
-## Screenshot
+## Feature Driven Example
 
 ![Alt text](assets/images/example_screenshot.png?raw=true "Example Screenshot in irb")
+
+## Test Coverage
+
+![Alt text](coverage/assets/0.10.2/test_coverage_27_03_18.png?raw=true "Test Coverage on 27/03/2018")
 
 #### Author
 
