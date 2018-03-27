@@ -1,7 +1,6 @@
 require_relative 'printer'
-
+# Responsible for logging transactions
 class Activity
-
   attr_reader :transactions
 
   def initialize
@@ -24,15 +23,14 @@ class Activity
   private
 
   def deposit_transaction(amount, balance)
-    date = DateTime.now.strftime('%d/%m/%Y')
-    values = sprintf('%.2f', amount) + " || " + sprintf('%.2f', balance)
-    transaction = "#{date} || +#{values}"
+    date = Time.now.strftime('%d/%m/%Y')
+    values = format('%.2f', amount) + ' || ' + format('%.2f', balance)
+    "#{date} || +#{values}"
   end
 
   def withdrawal_transaction(amount, balance)
-    date = DateTime.now.strftime('%d/%m/%Y')
-    values = sprintf('%.2f', amount) + " || " + sprintf('%.2f', balance)
-    transaction = "#{date} || -#{values}"
+    date = Time.now.strftime('%d/%m/%Y')
+    values = format('%.2f', amount) + ' || ' + format('%.2f', balance)
+    "#{date} || -#{values}"
   end
-
 end

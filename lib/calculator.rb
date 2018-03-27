@@ -1,13 +1,12 @@
+# Responsible for calculating changes to balance
 module Calculator
-
   private
 
-  def add(balance, amount)
+  def add(amount)
     @balance += amount
   end
 
-  def subtract(balance, amount)
+  def subtract(amount)
     @balance -= amount
   end
-
 end
