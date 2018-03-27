@@ -12,8 +12,6 @@ class Printer
   end
 
   def statement_body(transactions)
-    transactions.reverse.each do |trans|
-      puts trans.to_s
-    end
+    transactions.reverse.each { |trans| puts trans.to_s }
   end
 end
