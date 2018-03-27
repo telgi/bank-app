@@ -1,6 +1,6 @@
 require_relative 'printer'
 # Responsible for logging transactions
-class Activity
+class Transaction
   attr_reader :transactions
 
   def initialize

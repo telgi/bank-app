@@ -1,7 +1,7 @@
-require 'activity'
+require 'transaction'
 require 'timecop'
 
-describe Activity do
+describe Transaction do
   before(:each) do
     date = Time.now.strftime('%d/%m/%Y')
     Timecop.freeze(date)

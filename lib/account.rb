@@ -1,5 +1,5 @@
 require_relative 'calculator'
-require_relative 'activity'
+require_relative 'transaction'
 require 'date'
 
 # Responsible for managing user account
@@ -10,22 +10,22 @@ class Account
 
   def initialize
     @balance = 0
-    @activity = Activity.new
+    @transaction = Transaction.new
   end
 
   def deposit(amount)
     add(amount)
-    @activity.deposit_log(amount, balance)
+    @transaction.deposit_log(amount, balance)
   end
 
   def withdraw(amount)
     withdrawal_checks(amount)
     subtract(amount)
-    @activity.withdrawal_log(amount, balance)
+    @transaction.withdrawal_log(amount, balance)
   end
 
   def display_statement
-    @activity.process_statement
+    @transaction.process_statement
   end
 
   private

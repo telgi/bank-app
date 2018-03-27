@@ -92,7 +92,7 @@
         null,
         null
       ],
-      "/Users/terenceallitt/Projects/tech-test-week/bank-app/lib/activity.rb": [
+      "/Users/terenceallitt/Projects/tech-test-week/bank-app/lib/transaction.rb": [
         1,
         null,
         1,
@@ -149,7 +149,7 @@
         null,
         null
       ],
-      "/Users/terenceallitt/Projects/tech-test-week/bank-app/spec/activity_spec.rb": [
+      "/Users/terenceallitt/Projects/tech-test-week/bank-app/spec/transaction_spec.rb": [
         1,
         1,
         null,

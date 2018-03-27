@@ -2,11 +2,25 @@
 
 Practice tech test to build a simple bank application using OOP in Ruby.
 
+## Aim of Learning
+
+To produce well-designed code by using OOP and enhancing that design by
+conducting a self code review.
+
+## Approach
+
+Create user stories from client brief to produce a list of required features.
+Proceed to build application code by test-driving features in `irb` and units
+with `RSpec`. Design went from having 3 objects (Account, Calculator, and Printer)
+to 4 with the addition of Transaction. This emerged through analysing the code with
+the 'Single Responsibility Principle', which was violated by having Account and
+Printer sharing additional behaviour for logging transactions.
+
 ## Installation
 
-`git clone git@github.com:telgi/bank-app.git`
+`git clone git@github.com:telgi/bank-app.git` to your local machine
 
-`bundle install`
+Run `bundle install` to get gem dependencies
 
 ## How to Run
 
@@ -14,9 +28,13 @@ Use `irb` to interact with program
 
 ## Running Tests
 
-Feature tested using `irb`
+Test features by instantiating `Account` in `irb`
 
-Unit tested using `rspec`
+Test units by running `rspec`
+
+`open coverage/index.html` to check test coverage
+
+Run `rubocop` to check styling offences
 
 ## User Stories
 
@@ -54,7 +72,7 @@ I want to be able to print a statement as receipt.
 * Adds amount to balance [x]
 * Subtracts amount from balance [x]
 
-### Activity
+### Transaction
 ##### *Responsible for logging transactions*
 * logs every deposit with a date-stamp [x]
 * logs every withdrawal with a date-stamp [x]
