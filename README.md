@@ -85,7 +85,7 @@ I want to be able to print a statement as receipt.
 
 ## Test Coverage
 
-![Alt text](coverage/assets/0.10.2/test_coverage_27_03_18.png?raw=true "Test Coverage on 27/03/2018")
+![Alt text](assets/images/test_coverage_27_03_18.png?raw=true "Test Coverage on 27/03/2018")
 
 #### Author
 
